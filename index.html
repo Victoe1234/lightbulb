@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Victor's Lightbulb</title>
+</head>
+
+
+<img id="VictorImage" onclick="changeImage()" src="http://www.clker.com/cliparts/G/a/D/F/l/D/dim-light-bulb-hi.png" width="100" height="180">
+
+<b><p>Hello and welcome to Victor Guerra's website.</p></b> 
+
+<script>
+function changeImage() {
+    var image = document.getElementById('VictorImage');
+    if (image.src.match("encrypted")) {
+        image.src = "http://www.clker.com/cliparts/G/a/D/F/l/D/dim-light-bulb-hi.png";
+    } else {
+        image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9KEREbKtTbQtsZ4wSCiDwreIZ2ToKj-_fHWhW81HgnDJxFsMQ";
+    }
+}
+</script>
+
+</body>
+</html>
